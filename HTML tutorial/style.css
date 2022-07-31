@@ -8,10 +8,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.master__container{
-    
-}
-
 nav{
     height: 70px;
     display: flex;
@@ -25,7 +21,7 @@ header{
     background-color: #eadcff;
     height: calc(100vh - 70px);
     padding: 24px;
-    
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -72,19 +68,19 @@ li{
     max-width: 1300px;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
 }
 
 .__image--wrapper{
-    width: 40%;
+    margin: auto;
 
 }
 
 #about,
 #discord,
 #contact,
-#footer {
+footer {
     padding: 48px 0;
 }
 
@@ -113,7 +109,7 @@ h2{
 
 .about__image--wrapper{
     width: 40%;
-    padding: 0 30px;
+    
 }
 
 img{
@@ -122,8 +118,13 @@ img{
 
 .section__description--wrapper{
     width: 60%;
+}
+
+.about__image--wrapper,
+.section__description--wrapper{
     padding: 0 30px;
 }
+
 
 .section__description--para{
     font-size: 20px;
@@ -131,11 +132,13 @@ img{
     margin-bottom: 24px;
 }
 
+
 /*
 
 DISCORD
 
 */
+
 
 #discord{
     background-color: #cefeff;
@@ -158,6 +161,7 @@ form{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    padding: 0 24px;
 }
 
 input, textarea{
@@ -207,15 +211,54 @@ footer{
 
     .home__description--button{
         max-width: 240px;
+        align-items: center;
+        margin: auto;
     }
     h1{
+        text-align:center;
         font-size: 60px;
-        text-align:center
         
     }
 
     .subheader{
         text-align: center;
         font-size: 28px;
+    }
+
+    ul{
+        display: none;
+    }
+
+    .section__description{
+        flex-direction: column;
+    }
+
+    .section__description--wrapper{
+        width: 100%;
+    }
+
+    .about__image--wrapper{
+        width: 100%;
+    }
+
+    #discord .section__description{
+        flex-direction: column-reverse;
+    }
+
+    footer{
+        padding: 48px 24px;
+    }
+
+    .footer__logo{
+        max-width: 360px;
+    }
+
+    .footer_link {
+        padding: 0 4px;
+        font-size: 18px;
+    }
+
+    .footer__links{
+        margin-bottom: 24px;
     }
 }
